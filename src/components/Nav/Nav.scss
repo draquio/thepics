@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import "../../Sass/Index.scss";
+.nav{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    .nav_logo a {
+        text-decoration: none;
+        font-family: 'Pacifico', 'Open Sans', sans-serif;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: $media_responsive){
+    .nav{
+        flex-direction: column;
+        &_menu{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.pics_gallery{
+    columns: 3 250px;
+    column-gap: 10px;
+    text-align: center;
+    .pic_item{
+        margin-bottom: 10px;
+        overflow: hidden;
+        .img_item{
+            width: 100%;
+            transition: 0.3s ease all !important;
+        }
+        &:hover .img_item{
+            transform: scale(1.3);
+        }
+    }
+}

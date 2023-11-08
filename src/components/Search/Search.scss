@@ -1,0 +1,40 @@
+@import "../../Sass/Index.scss";
+.search_form {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .search_input {
+    max-width: 600px;
+    padding: 10px 40px 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #d1d1d1;
+    background: #eeeeee;
+    width: 300px;
+    &:focus-visible {
+      outline: 0;
+    }
+  }
+  .icon_search {
+    position: absolute;
+    right: 12px;
+    font-size: 25px;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: $media_responsive) {
+  .search_form {
+    .search_input {
+      width: 100%;
+      font-size: 18px;
+      padding: 15px 50px 15px 15px;
+      border-radius: 30px;
+    }
+    .icon_search {
+      font-size: 35px;
+    }
+  }
+}

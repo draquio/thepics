@@ -1,0 +1,70 @@
+@import "../../Sass/Index.scss";
+.single_photo {
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.41);
+  display: flex;
+  &_image {
+    max-width: 500px;
+    span {
+      display: flex !important;
+      img {
+        width: 100%;
+        height: 100%;
+        min-width: 350px;
+      }
+    }
+  }
+  .single_photo_content {
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    .username_profile {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #9595954a;
+      h3 {
+        font-size: 25px;
+      }
+      img {
+        border-radius: 50%;
+        width: 50px;
+      }
+    }
+    .image_activity {
+      display: flex;
+      gap: 15px;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      span {
+        display: flex;
+        justify-content: center;
+        .icon_details {
+          width: 20px;
+          height: auto;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media_responsive) {
+  .single_photo {
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    &_image {
+      max-width: none;
+      img {
+        min-width: 100px !important;
+      }
+    }
+  }
+}

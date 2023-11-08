@@ -1,0 +1,28 @@
+@import "../../Sass/Index.scss";
+.pagination{
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    &__selected{
+        background: #858585 !important;
+    }
+    div{
+        background: #c5c5c5;
+        padding: 10px 15px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+@media (max-width: $small_responsive){
+    .pagination .arrow_change {
+        display: none;
+    }
+}
