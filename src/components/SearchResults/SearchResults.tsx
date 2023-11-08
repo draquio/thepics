@@ -4,7 +4,6 @@ import { Photo as PhotoClass} from "../../services/Photo";
 import SearchItems from "./SearchItems";
 import "./Search.scss";
 import "../Sass/Item.scss";
-import Search from "../Search/Search";
 import Loader from "../Loader/Loader";
 
 const SearchResults = (props:{query:string}) => {

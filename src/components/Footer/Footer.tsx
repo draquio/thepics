@@ -3,7 +3,7 @@ import "./Footer.scss"
 
 const Footer = () => {
   return (
-    <Link className="footer_details" to={'https://draquioportfolio.vercel.app/'}>
+    <Link className="footer_details" target="_blank" to={'https://draquioportfolio.vercel.app/'}>
       © Sergio Mercado (Draquio) | Fullstack Developer
     </Link>
   )
